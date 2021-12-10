@@ -1,5 +1,5 @@
 {
-  "name": "Placeholder",
+  "name": "placeholder",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,5 +13,15 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "node-fasttext": "^1.0.0-alpha.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keza3/PlaceHolder2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Keza3/PlaceHolder2/issues"
+  },
+  "homepage": "https://github.com/Keza3/PlaceHolder2#readme"
 }
+
