@@ -1,15 +1,73 @@
  <!DOCTYPE html>
 <html>
 <head>
+  <style> 
+  html { background-color: #000; } 
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: papayawhip; 
+    margin: 0 auto;
+}
+ .header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+textarea {
+  position: absolute;
+  top: 200px;
+  
+
+}
+input[type=submit] {
+  position: absolute;
+  top: 300px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+ input[type=reset] {
+   position: absolute;
+  top: 300px;
+  left:220px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
 <meta charset="UTF-8">
 <title>Your front-end</title>
+<div class="header">
+  <img src="12.jpg" alt="logo" />
+  <h1>PlaceHolder</h1>
+</div>
 </head>
 
-<body>
+<body style="background-color:powderblue;">
 <form action="/fasttext">
-	Enter your text to be classified<br>
-	<input type="text" name="statement">
+
+	
+	<textarea rows = "5" cols = "50" style="background-color:#4b556a; name = "statement" placeholder="Enter Food item to be proccessed"></textarea>
+	
+	<input type="reset" value="Clear">
 	<input type="submit" value="Submit">
+
 </form> 
 
 </body>
