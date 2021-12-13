@@ -2,7 +2,7 @@ const express = require('express')
 const app = express();
 var FastText = require('node-fasttext');
 const cors = require('cors');
-
+app.use(express.static('public'));
 let config = { 
   dim: 100,
   input: "train.txt",
@@ -47,6 +47,6 @@ function getFastTextResults(statement) {
 	return "success!";
 }
 
-app.listen(8000, () => {
+app.listen(3000, () => {
   console.log('Listening on port 8000!')
 });
