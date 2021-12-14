@@ -2,7 +2,8 @@ const express = require('express')
 const app = express();
 var FastText = require('node-fasttext');
 const cors = require('cors');
-app.use(express.static('public'));
+
+
 let config = { 
   dim: 100,
   input: "train.txt",
@@ -20,19 +21,22 @@ FastText.train("supervised", config, function (success, error) {
   
 })
 
+//middleware
+app.use(express.static(__dirname+'/public'))
 app.use(cors())
+app.use(express.urlencoded({extended:false}))
 
-app.get('/', (req, res) => {
-  res.sendfile("index.html");
-});
 
-app.get('/fasttext/', function(req, res) {
-  var statement = req.param('statement');
-    res.send(getFastTextResults(statement));
-});
+
+app.post('/fasttext', (req,res)=>{
+  var statement = req.body.text;
+  var clasfaction = getFastTextResults(statement);
+    res.json({success:true, data:clasfaction});
+})
 
 function getFastTextResults(statement) {
 	//predict returns an array with the input and predictions for best cateogires
+  var statment2 = '';
 	FastText.predict(
 		"model.bin", 3,
 		[statement],
@@ -42,9 +46,10 @@ function getFastTextResults(statement) {
 			console.log(error)
 			return;
 		  }
-		  console.log(success)
+       statment2 = success[0].label;
+		  // console.log(success)
 		})
-	return "success!";
+	return statment2;
 }
 
 app.listen(3000, () => {

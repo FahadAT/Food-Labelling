@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <style> 
+  html { background-color: #000; } 
+  
+body {
+    min-height: 100vh;
+    max-width: 80%;
+    background-color: papayawhip; 
+    margin: 0 auto;
+}
+ .header img {
+  float: left;
+  width: 200px;
+  height: 200px;
+  background: #555;
+}
+body {
+  background-image: url('istockphoto-1218254547-170667a.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.header h1 {
+  color: White;
+  position: relative;
+  left: 30%;
+  
+}
+textarea {
+  position: absolute;
+  top: 200px;
+  left: 40%;
+  padding: 16px 32px;
+  resize: none;
+}
+input[type=submit] {
+  position: absolute;
+  top: 330px;
+  left: 45%;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+ input[type=reset] {
+   position: absolute;
+  top: 330px;
+  left:50%;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<meta charset="UTF-8">
+<title>Your front-end</title>
+<div class="header">
+  <img src="public/12.jpg" alt="logo" />
+  <h1>PlaceHolder</h1>
+</div>
+</head>
+
+<body style="background-color:powderblue;">
+<form id = "form-submit">
+	<textarea id="input-text"    rows = "5" cols = "50" style="background-color:#4b556a; name = "statement" placeholder="Enter Food item to be proccessed"></textarea>
+	<input type="reset" value="Clear">
+	<input type="submit" value="Submit">
+</form> 
+<div id ="text" class = "text"></div>
+<div id ="label"  class =  "label"></div>
+<script src = result.js></script>
+
+</body>
+
+</html> 
