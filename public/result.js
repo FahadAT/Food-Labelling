@@ -15,7 +15,10 @@ function post(e) {
             var result = "<div class = 'card'> <div class='inner_card'>" + text + "</div> <div class = 'right_side'>" +"LABEL:"+ label+ "</div></div>"
             document.getElementById("result_card").innerHTML +=result;
         }else{
-            var result = "<div class = 'card'> <div class='inner_card'>" + "Empty text" + "</div> <div class = 'right_side'>" +"LABEL:"+ classification.data+ "</div></div>"
+            if (text.length == 0){
+                text = "Empty text";
+            }
+            var result = "<div class = 'card'> <div class='inner_card'>" + text+ "</div> <div class = 'right_side'>" +"LABEL:"+ classification.data+ "</div></div>"
             document.getElementById("result_card").innerHTML +=result;
         }
 
