@@ -1,6 +1,6 @@
 [![Build Status](https://app.travis-ci.com/FahadAT/Placeholder.svg?branch=master)](https://app.travis-ci.com/FahadAT/Placeholder)
 # Food Labelling
- Placeholder uses fasttext library and a predefined model to take any text as input and if it is a food item in the model it will label it and show the labed to the user.
+ Food Labelling uses fasttext library and a predefined model to take any text as input and if it is a food item in the model it will label it and show the labed to the user.
  # fasttext
  [fastText](https://github.com/facebookresearch/fastText) is a library for learning of word embeddings and text classification created by Facebook's AI Research lab. The model allows one to create an unsupervised learning or supervised learning algorithm for obtaining vector representations for words.
  # Usage
