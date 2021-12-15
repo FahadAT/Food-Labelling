@@ -3,6 +3,7 @@ const app = express();
 var FastText = require('node-fasttext');
 const cors = require('cors');
 
+app.use(express.static(__dirname+'/public'))
 
 let config = { 
   dim: 100,
@@ -21,9 +22,9 @@ FastText.train("supervised", config, function (success, error) {
   
 })
 
-//middleware
-app.use(express.static(__dirname+'/public'))
+
 app.use(cors())
+//middleware
 app.use(express.urlencoded({extended:false}))
 
 
@@ -52,6 +53,6 @@ function getFastTextResults(statement) {
 	return statment2;
 }
 
-app.listen(3000, () => {
+app.listen(8000, () => {
   console.log('Listening on port 8000!')
 });
