@@ -1,138 +1,38 @@
- <!DOCTYPE html>
-<html>
-
-<head>
-  <link rel="icon" href="un.png" type="image/gif"  sizes="32x32" >
-  <style> 
-  html { background-color: #B8B5E3 } 
-  .shadowbox {
-  height: 400px;
-  width:700px;
-margin: 0 auto;
-  border: 1px solid #333;
-  box-shadow: 8px 8px 5px #444;
-  padding: 8px 12px;
- background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #7920c8 100%, rgba(0,212,255,1) 100%); 
-}
-
-body {
-    min-height: 100vh;
-    max-width: 100%;
-    background-color: papayawhip; 
-    margin: 0 auto;
-}
-.header img {
- position: absolute;
-  left: 10%;
-  width: 120px;
-  height: 120px;
-  background: #555;
-  background-blend-mode: multiply;
-  background-color: transparent;
-}
-
-.coll {
- position: absolute;
- left: 82%;
- top: 2%;
-  width: 90px;
-  height: 20px;
-  background-color: transparent;
-}
-
-body {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-blend-mode: multiply
-}
-.header h1 {
-  color:#0C2823;
-  position: absolute;
-  left: 40%;
-  
-}
-textarea {
-  border: 2px solid black;
-  border-radius: 5px;
- position: relative;
- top:80px;
-  padding: 16px 32px;
-  resize: none;
-  font-family:"Times New Roman", Times, serif;  
-  font-size: 24px; 
-    font-weight: bold;
-  color: white;
-  outline: none !important;
-}
-input[type=submit] {
-position: relative;
-top: 100px;
-left:40px;
- margin:0 auto;
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-}
- input[type=reset] {
-  position: relative;
-top: 100px;
-left:400px;
- margin: 0 auto;
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-output[name="result"]{
-  position: absolute;
-  top: 50%;
-  left: 38%;
-  background-color: #ffffff;
-  padding: 100px 250px;
-  font-size: 20px;
-  cursor: pointer;
-  border: #000;
-  border-radius: 30px;
-  border-style: double;
-  border-width: 5px;
-}
-</style>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<meta charset="UTF-8">
-<title>Your front-end</title>
-<div class="header">
-  <img src="university logo.png" alt="logo" />
-  <h1>Food Labeling</h1>
-</div>
-<div class="coll">
-  <img src="collage.png" alt="logo" />
-</div>
-</head>
-
-<body style="background-color:#B8B5E3">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="images/un.png" type="image/gif"  sizes="32x32" >
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Labeling</title>
+    </head>
+<body>
+    <div class="Header">
+        <img class="universtiy" src="images/universtiy-logo.svg" alt="logo">
+        <img class="college" src="images/ccis-logo-1.png" alt="logo">
+        <div class="inner_header">
+            <div class="project_name">
+                <h1>Food<span>Labeling</span></h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form_container">
+            <form id="form-submit">
+                <textarea name="text" id="Text" cols="30" rows="10" placeholder="Enter your text....."></textarea>
+                <div class="btn">
+                    <button id="submit-btn " type="submit" class="submit-btn">SUBMIT</button>
+                    <button type="reset" class="clear-btn">CLEAR</button>
+                </div>
+            </form>
+        </div>
+        <div class="result">
+            <div id="result_card" class="cards"></div>
+        </div>
+        <script src="result.js"></script>
+    </div>
 </body>
-<div class="shadowbox">
-<form id = "form-submit">
-	<textarea id="input-text"    rows = "5" cols = "50" style="background-color:#4b556a; name = "statement" placeholder="Enter Food item to be proccessed"></textarea>
-
-	<input type="reset" value="Clear">
-	<input type="submit" value="Submit">
-  <output style=border: name="result" > result label</output>
-</form> 
-<div id ="text" class = "text"></div>
-<div id ="label"  class = "label"></div>
-<script src = result.js></script>
-</div>
-
-
-</html> 
-
+</html>
