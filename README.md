@@ -5,12 +5,14 @@
  [fastText](https://github.com/facebookresearch/fastText) is a library for learning of word embeddings and text classification created by Facebook's AI Research lab. The model allows one to create an unsupervised learning or supervised learning algorithm for obtaining vector representations for words.
 # Features
 
-* Simple user interface
+* User interface
 * Easy to install
-* History of proccessed inputs
 * Travis Cl integration
 * Locally hosted
-* 
+* Display the result on the client page
+* The page dynamic change when client submit text
+
+
  # Usage
  Note: that this installation guide is only tested on a linux VM if problems occur please report it.
  
