@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <link rel="icon" href="un.png" type="image/gif"  sizes="32x32" >
   <style> 
   html { background-color: #B8B5E3 } 
   .shadowbox {
@@ -12,7 +13,7 @@ margin: 0 auto;
   box-shadow: 8px 8px 5px #444;
   padding: 8px 12px;
  background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,32,200,1) 100%, rgba(0,212,255,1) 100%); 
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #7920c8 100%, rgba(0,212,255,1) 100%); 
 }
 
 body {
@@ -21,23 +22,23 @@ body {
     background-color: papayawhip; 
     margin: 0 auto;
 }
- .header img {
+.header img {
  position: absolute;
   left: 10%;
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   background: #555;
   background-blend-mode: multiply;
   background-color: transparent;
 }
 
- .coll {
+.coll {
  position: absolute;
- left: 87%;
-  width: 100px;
-  height: 100px;
+ left: 82%;
+ top: 2%;
+  width: 90px;
+  height: 20px;
   background-color: transparent;
-  position: relative;
 }
 
 body {
@@ -47,9 +48,9 @@ body {
   background-blend-mode: multiply
 }
 .header h1 {
-  color: White;
+  color:#0C2823;
   position: absolute;
-  left: 43%;
+  left: 40%;
   
 }
 textarea {
@@ -90,6 +91,19 @@ input[type=submit] {
   margin: 4px 2px;
   cursor: pointer;
 }
+output[name="result"]{
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  background-color: #ffffff;
+  padding: 100px 250px;
+  font-size: 20px;
+  cursor: pointer;
+  border: #000;
+  border-radius: 30px;
+  border-style: double;
+  border-width: 5px;
+}
 </style>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <meta charset="UTF-8">
@@ -99,20 +113,19 @@ input[type=submit] {
   <h1>Food Labeling</h1>
 </div>
 <div class="coll">
-  <img src="college logo.png" alt="logo" />
+  <img src="collage.png" alt="logo" />
 </div>
 </head>
 
 <body style="background-color:#B8B5E3">
 </body>
 <div class="shadowbox">
-
-
 <form id = "form-submit">
 	<textarea id="input-text"    rows = "5" cols = "50" style="background-color:#4b556a; name = "statement" placeholder="Enter Food item to be proccessed"></textarea>
 
 	<input type="reset" value="Clear">
 	<input type="submit" value="Submit">
+  <output style=border: name="result" > result label</output>
 </form> 
 <div id ="text" class = "text"></div>
 <div id ="label"  class = "label"></div>
