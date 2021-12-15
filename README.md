@@ -20,7 +20,7 @@
 1. Download npm: sudo apt install npm
 2. Create and open project folder: mkdir [your choice name]
 3. Initialize requirements: npm init -y
-4. Download the [release](https://github.com/FahadAT/Placeholder/releases/tag/v0.1.0) and extract its content into the new directory
+4. Download the [release](https://github.com/FahadAT/Food-Labelling/releases/tag/V0.1.0) and extract its content into the new directory
 5. Install the Node.js sandbox for the Machine learning algorithm (fasttext): npm install node-fasttext --save
 6. Install Express: npm install express --save
 7. Install some cors issues: npm install cors --save
