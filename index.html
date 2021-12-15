@@ -1,9 +1,9 @@
  <!DOCTYPE html>
 <html>
 <head>
+  <link rel="icon" href="public/universitylogo.png"  type="image/gif"  sizes="32x32" >
   <style> 
   html { background-color: #000; } 
-  
 body {
     min-height: 100vh;
     max-width: 80%;
@@ -13,8 +13,8 @@ body {
  .header img {
  position: absolute;
   left: 10%;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   background: #555;
   background-blend-mode: multiply;
   background-color: transparent;
@@ -22,11 +22,11 @@ body {
 
  .coll {
  position: absolute;
- left: 87%;
-  width: 60px;
-  height: 100px;
+ left: 82%;
+ top: 2%;
+  width: 90px;
+  height: 20px;
   background-color: transparent;
-  position: relative;
 }
 
 body {
@@ -37,9 +37,9 @@ body {
   background-blend-mode: multiply
 }
 .header h1 {
-  color: White;
+  color:#2B3859;
   position: absolute;
-  left: 43%;
+  left: 40%;
   
 }
 textarea {
@@ -76,31 +76,39 @@ input[type=submit] {
   margin: 4px 2px;
   cursor: pointer;
 }
+output[name="result"]{
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  background-color: #ffffff;
+  padding: 100px 250px;
+  font-size: 20px;
+  cursor: pointer;
+  border: #000;
+  border-radius: 30px;
+  border-style: double;
+  border-width: 5px;
+}
 </style>
 
 <meta charset="UTF-8">
-<title>Your front-end</title>
+<title>Food Labeling system</title>
 <div class="header">
-  <img src="university logo.png" alt="logo" />
+  <img src="public/university.png" alt="logo" />
   <h1>Food Labeling</h1>
 </div>
 <div class="coll">
-  <img src="college logo.png" alt="logo" />
+  <img src="public/collage.png" style="width: 70px; height: 80px ;" alt="logo" />
 </div>
 </head>
 
 <body style="background-color:white;">
 </body>
 <form action="/fasttext">
-
-	
-	<textarea rows = "4" cols = "40" style="background-color:black; name = "statement" 		placeholder="Enter Food item to be proccessed"></textarea>
+	<textarea rows = "4" cols = "40" style="background-color:black; name = "statement"     placeholder="Enter Food item to be proccessed"></textarea>
 	<input type="reset" value="Clear">
 	<input type="submit" value="Submit">
-
+  <output style=border: name="result" > result label</output>  
 </form> 
-
-
-
 </html> 
 
