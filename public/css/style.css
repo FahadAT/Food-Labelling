@@ -190,7 +190,7 @@
 }
 
 .inner_card{
-    width: 80%;
+    width: fit-content;
     color: black;
     text-align:left;
     font-family: "Poppins";
@@ -198,9 +198,11 @@
     vertical-align: middle;
     display: table-cell  ;
     overflow-wrap: break-word;
+    word-break: break-all;
     padding: 1rem;
     height: fit-content;
 }
+
 
 .right_side{
     float:right;
