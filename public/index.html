@@ -1,20 +1,31 @@
  <!DOCTYPE html>
 <html>
+
 <head>
   <style> 
-  html { background-color: #000; } 
-  
+  html { background-color: #B8B5E3 } 
+  .shadowbox {
+  height: 400px;
+  width:700px;
+margin: 0 auto;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+ background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,32,200,1) 100%, rgba(0,212,255,1) 100%); 
+}
+
 body {
     min-height: 100vh;
-    max-width: 80%;
+    max-width: 100%;
     background-color: papayawhip; 
     margin: 0 auto;
 }
  .header img {
  position: absolute;
   left: 10%;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background: #555;
   background-blend-mode: multiply;
   background-color: transparent;
@@ -23,14 +34,13 @@ body {
  .coll {
  position: absolute;
  left: 87%;
-  width: 60px;
+  width: 100px;
   height: 100px;
   background-color: transparent;
   position: relative;
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('03-food-and-drink_506516848.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -43,19 +53,23 @@ body {
   
 }
 textarea {
-  position: absolute;
-  top: 25%;
-  left: 38%;
+  border: 2px solid black;
+  border-radius: 5px;
+  position:absolute;
+  top:10%;
+  right: 39%;
   padding: 16px 32px;
   resize: none;
   font-family:"Times New Roman", Times, serif;  
-  font-size: 20px; 
+  font-size: 24px; 
+    font-weight: bold;
   color: white;
+  outline: none !important;
 }
 input[type=submit] {
-  position: absolute;
-  top: 38%;
-  left: 40%;
+  position:absolute;
+  top:25%;
+  right: 55%;
   background-color: #4CAF50;
   border: none;
   color: white;
@@ -65,9 +79,9 @@ input[type=submit] {
   cursor: pointer;
 }
  input[type=reset] {
-   position: absolute;
-  top: 38%;
-  left:50%;
+  position:absolute;
+  top:25%;
+  right: 45%;
   background-color: #4CAF50;
   border: none;
   color: white;
@@ -77,7 +91,7 @@ input[type=submit] {
   cursor: pointer;
 }
 </style>
-
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <meta charset="UTF-8">
 <title>Your front-end</title>
 <div class="header">
@@ -89,8 +103,11 @@ input[type=submit] {
 </div>
 </head>
 
-<<<<<<< HEAD:public/index.html
-<body style="background-color:powderblue;">
+<body style="background-color:#B8B5E3">
+</body>
+<div class="shadowbox">
+
+
 <form id = "form-submit">
 	<textarea id="input-text"    rows = "5" cols = "50" style="background-color:#4b556a; name = "statement" placeholder="Enter Food item to be proccessed"></textarea>
 
@@ -98,9 +115,9 @@ input[type=submit] {
 	<input type="submit" value="Submit">
 </form> 
 <div id ="text" class = "text"></div>
-<div id ="label"  class =  "label"></div>
+<div id ="label"  class = "label"></div>
 <script src = result.js></script>
-
+</div>
 
 
 </html> 
